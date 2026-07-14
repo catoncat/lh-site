@@ -1,0 +1,19 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Source material and local operations notes stay outside the public site repo.
+source/
+DEPLOY.md
+DEPLOY-TENCENT.md
+
+# Large local backup asset; the site uses assets/plant.jpg instead.
+assets/plant-full.jpg
+
+# Superseded PPT export; manufacturing.html uses the cropped single-row asset.
+assets/smt-line.png
+
+# Local environment files should never be published.
+.env
+.env.*
+!.env.example
