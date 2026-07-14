@@ -28,6 +28,10 @@ python3 build-pages.py
 
 全站样式在 `css/site.css`，语言跳转逻辑在 `js/site.js`，图片在 `assets/`。
 
+## 自动发布
+
+向 `main` 推送后，GitHub Actions 会运行 `.github/workflows/deploy.yml`，同步静态文件到生产站点并检查公网页面。部署凭据只存放在 GitHub Actions Secrets，不写入仓库。
+
 ## 项目边界
 
 公开仓库只包含可发布的站点文件和页面生成脚本。PPT 解压原料、生产环境操作说明、备份素材和本机环境文件被 `.gitignore` 排除，不应提交到公开仓库。

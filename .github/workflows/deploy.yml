@@ -1,0 +1,73 @@
+name: Deploy static site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lihua-site-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.LH_DEPLOY_KEY }}
+          KNOWN_HOSTS: ${{ secrets.LH_KNOWN_HOSTS }}
+        run: |
+          set -eu
+          test -n "$DEPLOY_KEY"
+          test -n "$KNOWN_HOSTS"
+          install -m 700 -d "$HOME/.ssh"
+          printf '%s\n' "$DEPLOY_KEY" > "$HOME/.ssh/lihua_deploy"
+          printf '%s\n' "$KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/lihua_deploy" "$HOME/.ssh/known_hosts"
+
+      - name: Upload site
+        run: |
+          set -euo pipefail
+          ssh_args=(-i "$HOME/.ssh/lihua_deploy" -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -p 22)
+
+          rsync -az --delete \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '.gitignore' \
+            --exclude 'build-pages.py' \
+            --exclude 'README.md' \
+            --exclude 'DEPLOY.md' \
+            --exclude 'DEPLOY-TENCENT.md' \
+            --exclude 'source' \
+            --exclude '__pycache__' \
+            --exclude '.DS_Store' \
+            --exclude 'assets/plant-full.jpg' \
+            --exclude 'assets/smt-line.png' \
+            -e "ssh ${ssh_args[*]}" \
+            ./ root@139.199.2.140:/tmp/lihua-web-upload/
+
+          ssh "${ssh_args[@]}" root@139.199.2.140 '
+            sudo rsync -a --delete /tmp/lihua-web-upload/ /var/www/ts-lihua.com/ &&
+            sudo find /var/www/ts-lihua.com -type d -exec chmod 755 {} + &&
+            sudo find /var/www/ts-lihua.com -type f -exec chmod 644 {} +
+          '
+
+      - name: Verify production
+        run: |
+          set -euo pipefail
+          for path in / /zh/ /en/ /zh/manufacturing.html /en/manufacturing.html /css/site.css /assets/smt-line-single.png; do
+            code=$(curl --fail --silent --show-error --output /dev/null --write-out '%{http_code}' \
+              --resolve www.ts-lihua.com:443:139.199.2.140 \
+              "https://www.ts-lihua.com${path}")
+            test "$code" = 200
+          done
