@@ -1,0 +1,46 @@
+build-pages.py
+  s_64c56161d98e5c::t_a385c85ca48827 1-794,796-833
+  s_64c56161d98e5c::t_f2fc39df6c8478 795
+css/site.css
+  s_cf75547f859e50::t_0538be5f90042b 1-1247
+en/about.html
+  s_64c56161d98e5c::t_1b81f150d5a12e 1-110
+en/contact.html
+  s_64c56161d98e5c::t_4440fc4284f0d1 1-96
+en/index.html
+  s_64c56161d98e5c::t_17db5988d65fad 1-183
+en/manufacturing.html
+  s_64c56161d98e5c::t_5566a17d69e6ae 1-79
+zh/about.html
+  s_64c56161d98e5c::t_e8a30008a17b01 1-110
+zh/contact.html
+  s_64c56161d98e5c::t_660e40da12c524 1-96
+zh/index.html
+  s_64c56161d98e5c::t_9574bec5381e21 1-183
+zh/manufacturing.html
+  s_64c56161d98e5c::t_eb52ab5a1cc3b6 1-79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "79b775c5b18c5890d3a50693c46ffa10bda86eaa",
+  "prompts": {},
+  "sessions": {
+    "s_64c56161d98e5c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f59e2-3921-7a92-b171-c0ab42fe8bbb",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "cat <git@chen.rs>"
+    },
+    "s_cf75547f859e50": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f59e9-a561-7c42-ab5b-0775c15c7b37",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "cat <git@chen.rs>"
+    }
+  }
+}
