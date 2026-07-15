@@ -110,14 +110,15 @@ I18N = {
                     "image": "box-build.png",
                 },
             ],
-            "mes_kicker": "DIGITAL PROCESS CONTROL",
-            "mes_title": "MES 连接每一道工序，\n让质量过程可追溯",
-            "mes_body": "利华通过 MES 将生产任务、物料批次、工序执行、检验测试与异常处置串联起来，让质量要求落实到制造过程并形成可查询的生产履历。",
+            "mes_kicker": "CONNECTED FACTORY CONTROL",
+            "mes_title": "ERP、MES 与 TPM 协同，\n让制造过程透明可追溯",
+            "mes_body": "利华以 ERP 承接计划、MES 管理现场执行、TPM 保障设备运行，将工单、物料、工序、质量与设备数据连接成可查询、可协同的制造过程。",
+            "mes_label": "ERP · MES · TPM · TRACEABILITY",
             "mes_items": [
-                ("01", "工单与物料", "关联生产任务、BOM 与物料批次。"),
-                ("02", "工序执行", "记录关键工序的人员、设备与时间。"),
-                ("03", "检验与测试", "汇集制程检验、测试结果与不良信息。"),
-                ("04", "追溯与闭环", "建立生产履历并记录异常处置与改进。"),
+                ("01", "计划与执行协同", "ERP 工单与 MES 生产执行衔接。"),
+                ("02", "扫码过站与自动采集", "记录工序流转并采集关键设备数据。"),
+                ("03", "质量与物料闭环", "连接检验、缺陷、返工、批次和上料防错。"),
+                ("04", "设备全生命周期管理", "TPM 覆盖台账、报修、保养和维修任务。"),
             ],
             "quality_kicker": "QUALITY BUILT INTO THE PROCESS",
             "quality_title": "不是交付前检查，\n而是全过程质量控制",
@@ -379,14 +380,15 @@ I18N = {
                     "image": "box-build.png",
                 },
             ],
-            "mes_kicker": "DIGITAL PROCESS CONTROL",
-            "mes_title": "MES connects each production step\nfor traceable quality",
-            "mes_body": "Lihua uses MES to connect production tasks, material lots, process execution, inspection, test and exception handling—turning quality requirements into a queryable manufacturing record.",
+            "mes_kicker": "CONNECTED FACTORY CONTROL",
+            "mes_title": "ERP, MES and TPM work together\nfor transparent, traceable production",
+            "mes_body": "ERP coordinates planning, MES manages floor execution and TPM supports equipment reliability—connecting work orders, materials, operations, quality and equipment data in one manufacturing process.",
+            "mes_label": "ERP · MES · TPM · TRACEABILITY",
             "mes_items": [
-                ("01", "Work Orders & Materials", "Link production tasks, BOM data and material lots."),
-                ("02", "Process Execution", "Record people, equipment and time at key operations."),
-                ("03", "Inspection & Test", "Collect in-process checks, test results and defects."),
-                ("04", "Traceability & Closure", "Build production history and retain corrective-action records."),
+                ("01", "Planning & Execution", "Connect ERP work orders with MES production execution."),
+                ("02", "Scan Stations & Data Capture", "Record process flow and collect key equipment data."),
+                ("03", "Quality & Material Closure", "Link inspection, defects, rework, lots and loading controls."),
+                ("04", "Equipment Lifecycle", "TPM covers assets, repair, maintenance and service tasks."),
             ],
             "quality_kicker": "QUALITY BUILT INTO THE PROCESS",
             "quality_title": "Quality is controlled throughout,\nnot inspected in at the end",
@@ -714,7 +716,7 @@ def page_home(t):
         <span class="eyebrow mono">{h["mes_kicker"]}</span>
         <h2>{mes_title}</h2>
         <p>{h["mes_body"]}</p>
-        <span class="mes-system-label mono">MES · PROCESS · QUALITY · TRACEABILITY</span>
+        <span class="mes-system-label mono">{h["mes_label"]}</span>
       </div>
       <ol class="mes-flow">{''.join(mes_items)}</ol>
     </div>
@@ -812,6 +814,30 @@ def page_manufacturing(t):
         "mes_title": "用生产数据连接过程与质量" if zh else "Production data connects process and quality",
         "mes_body": "MES 将生产任务、关键工序记录、质量数据与批次追溯纳入同一生产履历，为过程控制、问题定位与持续改进提供依据。" if zh else "MES brings production tasks, key operation records, quality data and lot traceability into one manufacturing history for process control, issue analysis and continual improvement.",
         "mes_items": ["生产任务", "工序记录", "质量数据", "批次追溯"] if zh else ["Production tasks", "Process records", "Quality data", "Lot traceability"],
+        "digital_kicker": "ERP · MES · TPM",
+        "digital_title": "用数字化协同连接计划、现场与设备" if zh else "Digital coordination connects planning, production and equipment",
+        "digital_body": "利华在 ERP 管理基础上建设 MES 生产执行与 TPM 设备管理，将工单、物料、工序、质量和设备维护纳入同一协同链路。" if zh else "Building on ERP, Lihua connects MES production execution with TPM equipment management so work orders, materials, operations, quality and maintenance share one coordinated path.",
+        "digital_systems": [
+            ("01", "ERP", "计划协同" if zh else "Planning", "承接生产计划并将工单同步至现场执行。" if zh else "Coordinates production planning and passes work orders to floor execution."),
+            ("02", "MES", "生产执行" if zh else "Execution", "连接工艺路线、扫码过站、自动采集、质量和追溯。" if zh else "Connects routing, scan stations, automated data capture, quality and traceability."),
+            ("03", "TPM", "设备保障" if zh else "Equipment", "覆盖设备台账、报修、保养、维修任务和绩效记录。" if zh else "Covers asset records, repair requests, maintenance tasks and performance history."),
+        ],
+        "digital_cap_kicker": "CONNECTED OPERATIONS",
+        "digital_cap_title": "关键现场场景" if zh else "Connected shop-floor scenarios",
+        "digital_capabilities": [
+            ("工单协同与扫码过站" if zh else "Work-order sync & scan stations", "工艺路线、工位执行和过程状态形成连续记录。" if zh else "Routing, station execution and process status form a continuous record."),
+            ("设备自动采集与报工" if zh else "Automated capture & reporting", "采集关键设备事件、工序状态与过程参数。" if zh else "Capture key equipment events, operation states and process parameters."),
+            ("智能货架与上料防错" if zh else "Smart shelves & loading control", "物料批次、料盘、库位与站位进行扫码核验。" if zh else "Verify material lots, reels, locations and stations through scanning."),
+            ("检验、缺陷与返工闭环" if zh else "Inspection, defect & rework closure", "首件、末件、出货检验与异常处置关联生产任务。" if zh else "Link first/last article and outgoing inspection with exception handling."),
+            ("工单、批次与 SN 追溯" if zh else "Work-order, lot & SN traceability", "质量问题可沿工序、站点与生产履历逐级定位。" if zh else "Trace quality issues through operations, stations and manufacturing history."),
+            ("预防性设备维护" if zh else "Preventive equipment maintenance", "从事后维修转向自主保养、计划保养与预防维护。" if zh else "Shift from reactive repair to autonomous, planned and preventive maintenance."),
+        ],
+        "digital_outcome_kicker": "PUBLIC OUTCOMES",
+        "digital_outcomes": [
+            ("63", "台设备纳入 TPM 管理" if zh else "devices managed in TPM"),
+            ("分钟级" if zh else "Minutes", "质量异常追溯定位" if zh else "to locate quality traceability records"),
+        ],
+        "digital_note": "ERP 管计划 · MES 管执行 · TPM 管设备" if zh else "ERP plans · MES executes · TPM sustains equipment",
         "more_kicker": "ADDITIONAL PROCESSES",
         "more_title": "按项目配置的补充工艺" if zh else "Additional processes configured by program",
         "more_items": [
@@ -829,6 +855,20 @@ def page_manufacturing(t):
     index_links = "".join(f'<a href="#process-{i + 1}"><span>0{i + 1}</span>{item["name"]}</a>' for i, item in enumerate(m["items"]))
     quality_items = "".join(f'<li>{item}</li>' for item in page["quality_items"])
     mes_items = "".join(f'<li>{item}</li>' for item in page["mes_items"])
+    digital_systems = "".join(
+        '<li class="digital-system">'
+        f'<span class="digital-system-no mono">{no}</span><strong>{system}</strong><h3>{role}</h3><p>{desc}</p>'
+        '</li>'
+        for no, system, role, desc in page["digital_systems"]
+    )
+    digital_capabilities = "".join(
+        f'<article class="digital-capability"><span class="mono">0{i + 1}</span><h3>{title}</h3><p>{desc}</p></article>'
+        for i, (title, desc) in enumerate(page["digital_capabilities"])
+    )
+    digital_outcomes = "".join(
+        f'<div class="digital-outcome"><strong>{value}</strong><span>{label}</span></div>'
+        for value, label in page["digital_outcomes"]
+    )
     more_items = "".join(f'<article><span class="mono">0{i + 1}</span><h3>{title}</h3><p>{desc}</p></article>' for i, (title, desc) in enumerate(page["more_items"]))
     body = f"""
 <main id="main-content" class="inner-main">
@@ -852,6 +892,25 @@ def page_manufacturing(t):
   <nav class="capability-index container" aria-label="{page["nav_label"]}"><span class="mono">{page["nav_label"]}</span><div>{index_links}</div></nav>
 
   <div class="container manufacturing-modules">{''.join(blocks)}</div>
+
+  <section class="digital-manufacturing">
+    <div class="container digital-intro">
+      <div><span class="eyebrow mono">{page["digital_kicker"]}</span><h2>{page["digital_title"]}</h2></div>
+      <p>{page["digital_body"]}</p>
+    </div>
+    <ol class="container digital-system-flow">{digital_systems}</ol>
+    <div class="container digital-detail-grid">
+      <div>
+        <div class="digital-detail-head"><span class="eyebrow mono">{page["digital_cap_kicker"]}</span><h2>{page["digital_cap_title"]}</h2></div>
+        <div class="digital-capabilities">{digital_capabilities}</div>
+      </div>
+      <aside class="digital-outcomes" aria-label="{page["digital_outcome_kicker"]}">
+        <span class="eyebrow mono">{page["digital_outcome_kicker"]}</span>
+        {digital_outcomes}
+        <p class="digital-note mono">{page["digital_note"]}</p>
+      </aside>
+    </div>
+  </section>
 
   <section class="manufacturing-quality">
     <div class="container manufacturing-quality-grid">
