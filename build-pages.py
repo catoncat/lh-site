@@ -616,7 +616,7 @@ def shell(t, title: str, active: str, body: str, description=None, body_class: s
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content="{meta_description}" />
-  <link rel="stylesheet" href="../css/site.css?v=20260715" />
+  <link rel="stylesheet" href="../css/site.css?v=20260715-2" />
 </head>
 <body{class_attr}>
 {skip_link}

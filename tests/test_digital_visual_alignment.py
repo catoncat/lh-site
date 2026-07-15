@@ -30,6 +30,13 @@ class DigitalVisualAlignmentTests(unittest.TestCase):
             self.assertEqual(home.count("<main"), 1)
             self.assertEqual(home.count("<h1"), 1)
 
+    def test_generated_pages_use_updated_stylesheet_revision(self) -> None:
+        for language in ("zh", "en"):
+            for page in ("index.html", "manufacturing.html", "about.html", "contact.html"):
+                html = read(f"{language}/{page}")
+                self.assertIn("../css/site.css?v=20260715-2", html)
+                self.assertNotIn('../css/site.css?v=20260715"', html)
+
     def test_manufacturing_uses_flow_list_and_outcome_strip(self) -> None:
         for language in ("zh", "en"):
             manufacturing = read(f"{language}/manufacturing.html")
