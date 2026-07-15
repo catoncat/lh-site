@@ -264,9 +264,9 @@ I18N = {
                 },
                 {
                     "role": "CONTACT 02",
-                    "name": "Jare Lee / 李卓星",
+                    "name": "Jared Lee / 李卓星",
                     "title": "General Manager / 总经理",
-                    "lines": ["T: +86 135 5690 3684", "E: jared.lee@ts-lihua.com"],
+                    "lines": ["T: +86 750 5611189", "E: jared.lee@ts-lihua.com"],
                 },
             ],
             "addr_title": "台山市利华电子厂有限公司",
@@ -534,9 +534,9 @@ I18N = {
                 },
                 {
                     "role": "CONTACT 02",
-                    "name": "Jare Lee",
+                    "name": "Jared Lee",
                     "title": "General Manager",
-                    "lines": ["T: +86 135 5690 3684", "E: jared.lee@ts-lihua.com"],
+                    "lines": ["T: +86 750 5611189", "E: jared.lee@ts-lihua.com"],
                 },
             ],
             "addr_title": "Taishan City Lihua Electric Factory Ltd.",
