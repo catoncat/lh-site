@@ -11,8 +11,8 @@ I18N = {
         "other": "en",
         "other_label": "EN",
         "self_label": "中文",
-        "status": "SYSTEM STATUS: OPTIMAL // EST. 1993",
-        "location": "LOCATION: TAISHAN, CN [22.25N 112.79E]",
+        "status": "LIHUA ELECTRONICS · SINCE 1993",
+        "location": "TAISHAN · GUANGDONG · CHINA",
         "nav": {
             "home": "首页",
             "manufacturing": "制造能力",
@@ -44,7 +44,15 @@ I18N = {
             "end": "END OF DOCUMENT // TRANSMISSION SECURE",
         },
         "home": {
-            "title": "利华电子 | 工业精密制造",
+            "title": "利华电子 | PCBA、线束与机电装配制造服务",
+            "description": "台山市利华电子厂有限公司提供 PCBA、插件组装、定制线束、机电装配与测试服务，拥有 30+ 年电子制造服务经验。",
+            "hero_kicker": "ELECTRONICS MANUFACTURING SERVICES · SINCE 1993",
+            "hero_title": "复杂电子产品的\n一站式制造伙伴",
+            "hero_lead": "从 PCBA、插件组装、定制线束到整机装配与测试，利华为工业、交通、航空与检测设备客户提供稳定、灵活、可追溯的电子制造服务。",
+            "hero_primary": "提交项目需求",
+            "hero_secondary": "查看制造能力",
+            "hero_note": "广东台山 · 工程支持 · 灵活批量 · 全球项目经验",
+            "hero_image_alt": "利华电子台山生产厂区",
             "ref": "REF: LIHUA-ELECTRONICS_V.04",
             "build": "BUILD DATE: 2026.07.13",
             "brand1": "LIHUA.",
@@ -65,11 +73,64 @@ I18N = {
             "company_p2": "客户与产品分布于航空控制、工业仪器、交通运输、医疗设备与专业音响等领域；强调数字化管理、全过程追溯与稳定质量。",
             "company_mono": "台山市利华电子厂有限公司 // SINCE 1993",
             "stats": [
-                ("成立", "1993"),
-                ("经验", "30Y"),
-                ("车间", "7,000㎡"),
-                ("厂区", "50亩"),
+                ("成立于", "1993"),
+                ("EMS 经验", "30+ 年"),
+                ("生产车间", "7,000㎡"),
+                ("贴片产能", "350K/h"),
             ],
+            "cap_kicker": "WHAT WE BUILD",
+            "cap_intro": "四条制造能力主线覆盖板卡、线束与整机，测试和质量控制嵌入每个关键工序。",
+            "capabilities": [
+                {
+                    "no": "01",
+                    "name": "PCBA · SMT",
+                    "desc": "锡膏印刷、高速贴片、回流焊、在线 AOI 与 X-Ray 检查。",
+                    "metric": "0201+ · 510×510mm · 350K pcs/h",
+                    "image": "smt-line-single.png",
+                },
+                {
+                    "no": "02",
+                    "name": "插件组装",
+                    "desc": "元件成型、自动/手工插装、波峰焊、DI 清洗与过程检验。",
+                    "metric": "THT · Wave Soldering · AOI",
+                    "image": "tht-line.jpg",
+                },
+                {
+                    "no": "03",
+                    "name": "定制线缆与线束",
+                    "desc": "压接、焊接与 IDC，覆盖工业、汽车及航空类复杂线束。",
+                    "metric": "0–500kg 拉力 · 32,000 测试点",
+                    "image": "harness.png",
+                },
+                {
+                    "no": "04",
+                    "name": "机电装配与测试",
+                    "desc": "Box-build、ICT/FCT、固件烧录、老化、环境试验与定制包装。",
+                    "metric": "ICT · FCT · Burn-in · Hi-Pot",
+                    "image": "box-build.png",
+                },
+            ],
+            "quality_kicker": "QUALITY BUILT INTO THE PROCESS",
+            "quality_title": "不是交付前检查，\n而是全过程质量控制",
+            "quality_body": "从来料、制程到功能与环境测试，利华按项目要求配置质量关卡和追溯方式。",
+            "quality_items": [
+                "ISO 9001 / IATF 16949",
+                "IPC-A-610 Class 2 & 3",
+                "IPC J-STD-001 / WHMA-A-620",
+                "AOI / X-Ray / ICT / FCT",
+                "温循 -70°C 至 +200°C",
+                "敷形涂覆、老化与耐压测试",
+            ],
+            "process_kicker": "PROJECT PATH",
+            "process_title": "从资料评审到稳定量产",
+            "process_items": [
+                ("01", "工程评审", "确认 BOM、图纸、测试与质量要求。"),
+                ("02", "NPI 与打样", "完成 DFM、工艺设计、治具和样品验证。"),
+                ("03", "过程控制", "按工序设置检验、测试和追溯节点。"),
+                ("04", "量产交付", "以灵活排产、质量一致性和准时交付支撑长期合作。"),
+            ],
+            "industry_kicker": "INDUSTRIES & APPLICATIONS",
+            "industry_intro": "制造能力服务于高可靠、复杂装配和多品种项目。",
             "lean_left": "METHODOLOGY: LEAN MANUFACTURING",
             "lean_right": "FLOW OPTIMIZATION: ACTIVE",
             "lean_peak": "PEAK EFFICIENCY POINT",
@@ -86,8 +147,8 @@ I18N = {
                 ("03. MOBILITY", "交通与充电", "交通设备与新能源汽车充电相关 PCBA。"),
             ],
             "cta_title": "CONTACT",
-            "cta_body": "项目评估、工艺能力或样品需求，直接联系工厂窗口。",
-            "cta_btn": "[ 联系我们 ]",
+            "cta_body": "有新项目、样品或工艺问题？直接把需求发给工厂团队。",
+            "cta_btn": "联系项目团队",
             "offers_cat": "WHY LIHUA",
             "offers_title": "合作方式",
             "offers": [
@@ -106,8 +167,9 @@ I18N = {
                 ("工业设备", "工业控制与设备侧板卡、组件制造。", "app-industrial.png"),
                 ("电力系统", "电力与能源相关电子装配场景。", "app-power2.jpg"),
             ],
-            "campus_title": "厂区与现场",
-            "campus_body": "厂区占地 50 亩（后备 30 亩），生产车间约 7,000 平方米。以可交付、可追溯的制造服务支撑长期合作。",
+            "campus_kicker": "THE FACTORY",
+            "campus_title": "真实现场，稳定制造",
+            "campus_body": "利华位于广东台山，厂区占地 50 亩并预留 30 亩扩展用地，生产车间约 7,000 平方米。团队以工程支持、灵活响应和长期合作为核心。",
         },
         "manufacturing": {
             "title": "制造能力 | 利华电子",
@@ -209,8 +271,8 @@ I18N = {
         "other": "zh",
         "other_label": "中文",
         "self_label": "EN",
-        "status": "SYSTEM STATUS: OPTIMAL // EST. 1993",
-        "location": "LOCATION: TAISHAN, CN [22.25N 112.79E]",
+        "status": "LIHUA ELECTRONICS · SINCE 1993",
+        "location": "TAISHAN · GUANGDONG · CHINA",
         "nav": {
             "home": "Home",
             "manufacturing": "Manufacturing",
@@ -242,7 +304,15 @@ I18N = {
             "end": "END OF DOCUMENT // TRANSMISSION SECURE",
         },
         "home": {
-            "title": "LIHUA ELECTRONICS | Industrial Precision Systems",
+            "title": "LIHUA ELECTRONICS | PCBA, Cable Harness & Box-Build EMS",
+            "description": "Taishan City Lihua Electric Factory provides PCBA, THT assembly, custom cable harness, box-build and testing backed by 30+ years of EMS experience.",
+            "hero_kicker": "ELECTRONICS MANUFACTURING SERVICES · SINCE 1993",
+            "hero_title": "One manufacturing partner\nfor complex electronics",
+            "hero_lead": "From PCBA and THT assembly to custom cable harnesses, box-build and test, Lihua delivers flexible, traceable electronics manufacturing for demanding industrial products.",
+            "hero_primary": "Start a project",
+            "hero_secondary": "Explore capabilities",
+            "hero_note": "Taishan, China · Engineering support · Flexible volume · Global project experience",
+            "hero_image_alt": "Lihua Electronics manufacturing campus in Taishan",
             "ref": "REF: LIHUA-ELECTRONICS_V.04",
             "build": "BUILD DATE: 2026.07.13",
             "brand1": "LIHUA.",
@@ -264,10 +334,63 @@ I18N = {
             "company_mono": "TAISHAN CITY LIHUA ELECTRIC FACTORY LTD // SINCE 1993",
             "stats": [
                 ("Founded", "1993"),
-                ("EMS", "30Y"),
-                ("Floor", "7,000㎡"),
-                ("Campus", "50 acres"),
+                ("EMS experience", "30+ years"),
+                ("Manufacturing floor", "7,000㎡"),
+                ("Placement capacity", "350K/h"),
             ],
+            "cap_kicker": "WHAT WE BUILD",
+            "cap_intro": "Four connected manufacturing capabilities cover boards, harnesses and complete systems, with test and quality control embedded in the process.",
+            "capabilities": [
+                {
+                    "no": "01",
+                    "name": "PCBA · SMT",
+                    "desc": "Solder paste printing, high-speed placement, reflow, inline AOI and X-Ray inspection.",
+                    "metric": "0201+ · 510×510mm · 350K pcs/h",
+                    "image": "smt-line-single.png",
+                },
+                {
+                    "no": "02",
+                    "name": "THT Assembly",
+                    "desc": "Component forming, insertion, wave soldering, DI wash and in-process inspection.",
+                    "metric": "THT · Wave Soldering · AOI",
+                    "image": "tht-line.jpg",
+                },
+                {
+                    "no": "03",
+                    "name": "Custom Cable & Harness",
+                    "desc": "Crimp, solder and IDC for complex industrial, automotive and aircraft harness work.",
+                    "metric": "0–500kg pull test · 32,000 test points",
+                    "image": "harness.png",
+                },
+                {
+                    "no": "04",
+                    "name": "Box-Build & Test",
+                    "desc": "Electro-mechanical assembly, ICT/FCT, programming, burn-in, environmental test and packaging.",
+                    "metric": "ICT · FCT · Burn-in · Hi-Pot",
+                    "image": "box-build.png",
+                },
+            ],
+            "quality_kicker": "QUALITY BUILT INTO THE PROCESS",
+            "quality_title": "Quality is controlled throughout,\nnot inspected in at the end",
+            "quality_body": "From incoming material to process, functional and environmental test, quality gates and traceability are configured around each program.",
+            "quality_items": [
+                "ISO 9001 / IATF 16949",
+                "IPC-A-610 Class 2 & 3",
+                "IPC J-STD-001 / WHMA-A-620",
+                "AOI / X-Ray / ICT / FCT",
+                "Temperature cycle -70°C to +200°C",
+                "Conformal coating, burn-in and hi-pot",
+            ],
+            "process_kicker": "PROJECT PATH",
+            "process_title": "From engineering review to stable production",
+            "process_items": [
+                ("01", "Engineering review", "Align BOM, drawings, test coverage and quality requirements."),
+                ("02", "NPI & prototype", "Complete DFM, process design, fixtures and sample validation."),
+                ("03", "Process control", "Place inspection, test and traceability gates along the build path."),
+                ("04", "Production delivery", "Support long-term programs with flexible scheduling and consistent output."),
+            ],
+            "industry_kicker": "INDUSTRIES & APPLICATIONS",
+            "industry_intro": "Built for high-reliability, complex assembly and high-mix programs.",
             "lean_left": "METHODOLOGY: LEAN MANUFACTURING",
             "lean_right": "FLOW OPTIMIZATION: ACTIVE",
             "lean_peak": "PEAK EFFICIENCY POINT",
@@ -284,8 +407,8 @@ I18N = {
                 ("03. MOBILITY", "Transport<br>& Charging", "Transportation equipment and EV charging related PCBA."),
             ],
             "cta_title": "CONTACT",
-            "cta_body": "For capability review, NPI or sample builds, contact the plant team.",
-            "cta_btn": "[ Contact Us ]",
+            "cta_body": "Have a new build, sample or process question? Send it directly to the plant team.",
+            "cta_btn": "Contact the project team",
             "offers_cat": "WHY LIHUA",
             "offers_title": "How we work",
             "offers": [
@@ -304,8 +427,9 @@ I18N = {
                 ("Industrial equipment", "Control boards and assemblies for industrial systems.", "app-industrial.png"),
                 ("Power systems", "Electronics assembly for power and energy contexts.", "app-power2.jpg"),
             ],
-            "campus_title": "Campus & floor",
-            "campus_body": "50-acre campus with 30 acres reserve; about 7,000㎡ manufacturing space built for deliverable, traceable EMS work.",
+            "campus_kicker": "THE FACTORY",
+            "campus_title": "A real factory built for consistent delivery",
+            "campus_body": "Lihua is based in Taishan, Guangdong, with a 50-mu campus, 30 mu of reserved expansion land and about 7,000 square meters of manufacturing space. Engineering support, responsiveness and long-term partnership guide the work.",
         },
         "manufacturing": {
             "title": "Manufacturing | LIHUA ELECTRONICS",
@@ -412,7 +536,7 @@ def nav(t, active: str) -> str:
     other_href = t["other_paths"][active]
     return f"""
 <nav class="site-nav">
-  <div class="mono nav-status">{t["status"]}</div>
+  <div class="mono nav-status"><span class="nav-brand">LIHUA</span><span class="nav-context"> ELECTRONICS · SINCE 1993</span></div>
   <div class="nav-links">
     {''.join(links)}
   </div>
@@ -429,45 +553,53 @@ def nav(t, active: str) -> str:
 
 def footer(t) -> str:
     f = t["footer"]
+    nav_links = "".join(
+        f'<a href="{t["paths"][key]}">{t["nav"][key]}</a>'
+        for key in ("home", "manufacturing", "about", "contact")
+    )
     return f"""
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div>
+      <div class="footer-brand-block">
         <div class="footer-logo">LIHUA®</div>
-        <p class="mono muted">{f["tagline"]}<br>{f["copy"]}</p>
+        <p class="footer-summary">{f["tagline"]}</p>
       </div>
-      <div>
+      <div class="footer-nav-block">
+        <span class="mono col-title">NAVIGATION</span>
+        <nav class="footer-links" aria-label="Footer">{nav_links}</nav>
+      </div>
+      <div class="footer-contact-block">
         <span class="mono col-title">{f["contact"]}</span>
-        <p class="mono">{f["phone"]}<br>{f["email"]}</p>
+        <p><a href="tel:+867505625181">+86 750 5625181</a><br><a href="mailto:raylee@ts-lihua.com">raylee@ts-lihua.com</a></p>
       </div>
-      <div>
-        <span class="mono col-title">{f["social"]}</span>
-        <p class="mono">{f["social_lines"]}</p>
-      </div>
-      <div>
+      <div class="footer-legal-block">
         <span class="mono col-title">{f["legal"]}</span>
-        <p class="mono">{f["legal_lines"]}</p>
+        <p>{f["legal_lines"]}</p>
       </div>
     </div>
-    <div class="divider-double"></div>
-    <div class="mono footer-end">{f["end"]}</div>
+    <div class="footer-bottom"><span class="mono">{f["copy"]}</span><span class="mono">TAISHAN · GUANGDONG · CHINA</span></div>
   </div>
 </footer>
 """
 
 
-def shell(t, title: str, active: str, body: str) -> str:
+def shell(t, title: str, active: str, body: str, description=None, body_class: str = "") -> str:
+    meta_description = description or "Taishan City Lihua Electronics Factory — PCBA, harness, electromechanical manufacturing."
+    class_attr = f' class="{body_class}"' if body_class else ""
+    skip_text = "跳到主要内容" if t["dir"] == "zh" else "Skip to content"
+    skip_link = f'<a class="skip-link" href="#main-content">{skip_text}</a>' if body_class else ""
     return f"""<!doctype html>
 <html lang="{t["lang"]}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
-  <meta name="description" content="Taishan City Lihua Electronics Factory — PCBA, harness, electromechanical manufacturing." />
-  <link rel="stylesheet" href="../css/site.css" />
+  <meta name="description" content="{meta_description}" />
+  <link rel="stylesheet" href="../css/site.css?v=20260715" />
 </head>
-<body>
+<body{class_attr}>
+{skip_link}
 {nav(t, active)}
 {body}
 {footer(t)}
@@ -480,288 +612,272 @@ def shell(t, title: str, active: str, body: str) -> str:
 
 def page_home(t):
     h = t["home"]
-    cards = []
-    for idx, (no, name, desc, featured) in enumerate(h["caps"]):
-        cls = "service-card featured" if featured else "service-card"
-        cards.append(
-            f'<div class="{cls}"><span class="mono">{no}</span><div><h3>{name}</h3><p class="mono">{desc}</p></div></div>'
+    hero_title = h["hero_title"].replace("\n", "<br> ")
+    quality_title = h["quality_title"].replace("\n", "<br> ")
+    stats = [
+        f'<div class="home-stat"><strong>{value}</strong><span>{label}</span></div>'
+        for label, value in h["stats"]
+    ]
+    capabilities = []
+    for item in h["capabilities"]:
+        capabilities.append(
+            '<article class="capability-card">'
+            '<div class="capability-photo">'
+            f'<img src="../assets/{item["image"]}" alt="{item["name"]}" loading="lazy" decoding="async" />'
+            f'<span class="capability-no mono">{item["no"]}</span>'
+            '</div>'
+            '<div class="capability-copy">'
+            f'<h3>{item["name"]}</h3><p>{item["desc"]}</p>'
+            f'<span class="capability-metric mono">{item["metric"]}</span>'
+            '</div></article>'
         )
-    stats = []
-    for idx, (label, value) in enumerate(h["stats"]):
-        blue = " blue" if idx == 1 else ""
-        stats.append(
-            f'<div class="stat-item"><span class="mono">{label}</span><span class="value{blue}">{value}</span></div>'
+    quality_items = [f'<li>{item}</li>' for item in h["quality_items"]]
+    process_items = [
+        '<li class="process-step">'
+        f'<span class="process-no mono">{no}</span><div><h3>{title}</h3><p>{desc}</p></div>'
+        '</li>'
+        for no, title, desc in h["process_items"]
+    ]
+    applications = []
+    for idx, (title, desc, img) in enumerate(h["apps"], 1):
+        applications.append(
+            '<article class="industry-card">'
+            f'<img src="../assets/{img}" alt="{title}" loading="lazy" decoding="async" />'
+            '<div class="industry-card-copy">'
+            f'<span class="mono">0{idx}</span><h3>{title}</h3><p>{desc}</p>'
+            '</div></article>'
         )
-    lean = []
-    for no, text in h["lean_items"]:
-        lean.append(
-            f'<div><span class="mono accent-label">{no}</span><p>{text}</p></div>'
-        )
-    offers = []
-    for idx, (title, desc) in enumerate(h.get("offers", []), 1):
-        offers.append(
-            f'<div class="offer-card"><span class="mono">[ 0{idx} ]</span><h3>{title}</h3><p>{desc}</p></div>'
-        )
-    apps = []
-    for idx, (title, desc, img) in enumerate(h.get("apps", []), 1):
-        apps.append(
-            "<article class=\"app-card\">"
-            f"<div class=\"app-photo\"><img src=\"../assets/{img}\" alt=\"{title}\" /></div>"
-            "<div class=\"app-copy\">"
-            f"<span class=\"mono\">0{idx}</span>"
-            f"<h3>{title}</h3>"
-            f"<p>{desc}</p>"
-            "</div></article>"
-        )
-    sectors = []
-    for no, title, desc in h["sectors"]:
-        sectors.append(
-            f'<div class="solution-col"><span class="mono">{no}</span><h3>{title}</h3><p class="mono">{desc}</p></div>'
-        )
-    campus_title = h.get("campus_title", "Campus")
-    campus_body = h.get("campus_body", "")
     body = f"""
-<div class="container">
-  <header class="hero">
-    <div class="hero-meta">
-      <span class="mono">{h["ref"]}</span>
-      <span class="mono">{h["build"]}</span>
-    </div>
-    <h1 class="brand-display">{h["brand1"]}</h1>
-    <h1 class="brand-display accent">{h["brand2"]}</h1>
-    <div class="hero-image-container hero-image-single">
-      <div class="hero-overlay">
-        <span class="tag">{h["facility"]}</span>
-        <p class="mono">{h["hero_line"]}</p>
+<main id="main-content" class="home-main">
+  <section class="home-hero">
+    <div class="container home-hero-grid">
+      <div class="home-hero-copy">
+        <span class="eyebrow mono">{h["hero_kicker"]}</span>
+        <h1>{hero_title}</h1>
+        <p class="home-hero-lead">{h["hero_lead"]}</p>
+        <div class="home-actions">
+          <a class="button button-primary" href="{t["paths"]["contact"]}">{h["hero_primary"]}<span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="{t["paths"]["manufacturing"]}">{h["hero_secondary"]}</a>
+        </div>
+        <p class="home-hero-note mono">{h["hero_note"]}</p>
       </div>
-      <img src="../assets/plant.jpg" alt="Lihua plant campus" />
+      <figure class="home-hero-visual">
+        <img src="../assets/plant.jpg" alt="{h["hero_image_alt"]}" fetchpriority="high" decoding="async" />
+        <figcaption><span>LIHUA</span><strong>TAISHAN<br>CHINA</strong></figcaption>
+      </figure>
     </div>
-  </header>
+  </section>
 
-  <section id="services">
-    <div class="section-header">
-      <div>
-        <span class="mono">{h["cap_cat"]}</span>
-        <h2>{h["cap_title"]}</h2>
+  <section class="home-proof" aria-label="Company facts">
+    <div class="container home-stats">{''.join(stats)}</div>
+  </section>
+
+  <section class="home-section home-capabilities" id="capabilities">
+    <div class="container">
+      <div class="home-section-head">
+        <div><span class="eyebrow mono">{h["cap_kicker"]}</span><h2>{h["cap_title"]}</h2></div>
+        <p>{h["cap_intro"]}</p>
       </div>
-      <div class="mono">{h["cap_total"]}</div>
-    </div>
-    <div class="services-grid">
-      {''.join(cards)}
+      <div class="capability-grid">{''.join(capabilities)}</div>
+      <a class="section-link" href="{t["paths"]["manufacturing"]}">{h["hero_secondary"]}<span aria-hidden="true">→</span></a>
     </div>
   </section>
 
-  <section class="offers-section">
-    <div class="section-header">
-      <div>
-        <span class="mono">{h.get("offers_cat", "WHY LIHUA")}</span>
-        <h2>{h.get("offers_title", "")}</h2>
+  <section class="home-quality">
+    <div class="container home-quality-grid">
+      <div class="home-quality-copy">
+        <span class="eyebrow mono">{h["quality_kicker"]}</span>
+        <h2>{quality_title}</h2>
+        <p>{h["quality_body"]}</p>
+        <ul class="quality-list">{''.join(quality_items)}</ul>
       </div>
-    </div>
-    <div class="offers-grid">
-      {''.join(offers)}
-    </div>
-  </section>
-
-  <section class="customers-bar">
-    <span class="mono">{h.get("customers_label", "")}</span>
-    <p class="customers-line">{h.get("customers", "")}</p>
-  </section>
-
-  <section id="about" class="about-split">
-    <div class="about-text">
-      <span class="tag tag-spaced">{h["company_tag"]}</span>
-      <p>{h["company_p1"]}</p>
-      <p>{h["company_p2"]}</p>
-      <div class="divider-double"></div>
-      <span class="mono">{h["company_mono"]}</span>
-    </div>
-    <div class="stats-grid">
-      {''.join(stats)}
-    </div>
-  </section>
-</div>
-
-<section class="media-band">
-  <div class="media"><img src="../assets/lean.jpg" alt="Factory floor" /></div>
-  <div class="copy">
-    <span class="mono">CAMPUS</span>
-    <h3>{campus_title}</h3>
-    <p>{campus_body}</p>
-    <div class="chip-row">
-      <span class="chip">EMS</span>
-      <span class="chip">PCBA</span>
-      <span class="chip">HARNESS</span>
-      <span class="chip">BOX-BUILD</span>
-    </div>
-  </div>
-</section>
-
-<section id="lean" class="lean-section">
-  <div class="container">
-    <div class="hero-meta hero-meta-light">
-      <span class="mono">{h["lean_left"]}</span>
-      <span class="mono">{h["lean_right"]}</span>
-    </div>
-    <div class="lean-visualization">
-      <svg class="wave-svg" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M0,100 C150,100 250,50 400,50 C550,50 650,150 800,150 C950,150 1000,100 1000,100" fill="none" stroke="#1A5C40" stroke-width="4"></path>
-        <path d="M0,110 C150,110 250,60 400,60 C550,60 650,160 800,160 C950,160 1000,110 1000,110" fill="none" stroke="white" stroke-width="1" stroke-dasharray="5,5"></path>
-        <rect x="390" y="40" width="20" height="20" fill="white"></rect>
-        <text x="420" y="55" fill="white" font-family="monospace" font-size="12">{h["lean_peak"]}</text>
-      </svg>
-    </div>
-    <div class="lean-grid">
-      {''.join(lean)}
-    </div>
-  </div>
-</section>
-
-<div class="container">
-  <section id="solutions">
-    <div class="section-header">
-      <div>
-        <span class="mono">{h["sector_cat"]}</span>
-        <h2>{h["sector_title"]}</h2>
+      <div class="home-quality-photo">
+        <img src="../assets/testing.png" alt="Testing and quality inspection equipment" loading="lazy" decoding="async" />
+        <span class="photo-label mono">AOI · X-RAY · ICT · FCT</span>
       </div>
     </div>
-    <div class="solutions-strip">
-      {''.join(sectors)}
-    </div>
   </section>
 
-  <section class="apps-section">
-    <div class="section-header">
-      <div>
-        <span class="mono">{h.get("apps_cat", "APPLICATIONS")}</span>
-        <h2>{h.get("apps_title", "")}</h2>
+  <section class="home-section home-process">
+    <div class="container">
+      <div class="home-section-head compact">
+        <div><span class="eyebrow mono">{h["process_kicker"]}</span><h2>{h["process_title"]}</h2></div>
       </div>
-    </div>
-    <div class="apps-grid">
-      {''.join(apps)}
+      <ol class="process-list">{''.join(process_items)}</ol>
     </div>
   </section>
 
-  <section class="content-block cta-block">
-    <span class="mono">{h["cta_title"]}</span>
-    <h3>{h["cta_body"]}</h3>
-    <p><a class="text-link" href="{t["paths"]["contact"]}">{h["cta_btn"]}</a></p>
+  <section class="home-section home-industries">
+    <div class="container">
+      <div class="home-section-head">
+        <div><span class="eyebrow mono">{h["industry_kicker"]}</span><h2>{h["apps_title"]}</h2></div>
+        <p>{h["industry_intro"]}</p>
+      </div>
+      <div class="industry-grid">{''.join(applications)}</div>
+    </div>
   </section>
-</div>
+
+  <section class="home-factory">
+    <div class="home-factory-photo"><img src="../assets/lean.jpg" alt="Lihua production floor" loading="lazy" decoding="async" /></div>
+    <div class="home-factory-copy">
+      <span class="eyebrow mono">{h["campus_kicker"]}</span>
+      <h2>{h["campus_title"]}</h2>
+      <p>{h["campus_body"]}</p>
+      <div class="chip-row"><span class="chip">EMS</span><span class="chip">PCBA</span><span class="chip">HARNESS</span><span class="chip">BOX-BUILD</span></div>
+    </div>
+  </section>
+
+  <section class="home-final-cta">
+    <div class="container home-final-cta-inner">
+      <div><span class="eyebrow mono">{h["cta_title"]}</span><h2>{h["cta_body"]}</h2></div>
+      <a class="button button-light" href="{t["paths"]["contact"]}">{h["cta_btn"]}<span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</main>
 """
-    return shell(t, h["title"], "home", body)
+    return shell(t, h["title"], "home", body, h["description"], "home-page")
 
 
 def page_manufacturing(t):
     m = t["manufacturing"]
+    zh = t["dir"] == "zh"
     images = ["smt-line-single.png", "tht-line.jpg", "harness.png", "box-build.png"]
     blocks = []
     for i, item in enumerate(m["items"]):
         img = images[i % len(images)]
         points = "".join(f"<li>{p}</li>" for p in item["points"])
-        reverse = " is-reverse" if i % 2 else ""
+        reverse = " reverse" if i % 2 else ""
         blocks.append(
-            f'<section class="process-block{reverse}">'
-            f'<div class="process-photo"><img src="../assets/{img}" alt="{item["name"]}" /></div>'
-            f'<div class="process-copy">'
-            f'<span class="mono">{item["no"]}</span>'
-            f'<h3>{item["name"]}</h3>'
-            f'<p class="process-desc">{item["desc"]}</p>'
-            f'<ul class="proof-list">{points}</ul>'
-            f'</div></section>'
+            f'<section class="manufacturing-module{reverse}" id="process-{i + 1}">'
+            f'<div class="manufacturing-module-photo"><img src="../assets/{img}" alt="{item["name"]}" loading="lazy" decoding="async" /></div>'
+            f'<div class="manufacturing-module-copy"><span class="eyebrow mono">{item["no"]}</span>'
+            f'<h2>{item["name"]}</h2><p class="module-desc">{item["desc"]}</p>'
+            f'<ul class="module-facts">{points}</ul></div></section>'
         )
-    path_title = "工艺主路径" if t["dir"] == "zh" else "Process path"
-    path_body = (
-        "从 SMT / 插件到线束与整机，测试嵌在路径中。下面按模块展开关键参数与现场图。"
-        if t["dir"] == "zh"
-        else "From SMT and THT to harness and box-build, with test embedded in the path. Key parameters and floor photos below."
-    )
+    page = {
+        "eyebrow": "MANUFACTURING CAPABILITIES",
+        "title": "从板卡到整机，制造与测试一体化" if zh else "Integrated manufacturing from board to complete system",
+        "lead": "工艺、测试与质量控制沿同一条制造路径协同，适合多品种、复杂装配和中高批量项目。" if zh else "Process, test and quality control work along one connected path for high-mix, complex assemblies and medium-to-high volume programs.",
+        "primary": "联系工程团队" if zh else "Contact engineering",
+        "secondary": "查看工艺模块" if zh else "View process modules",
+        "facts": [
+            ("贴片总产能" if zh else "Placement capacity", "350K pcs/h"),
+            ("最大板尺寸" if zh else "Max board size", "510×510mm"),
+            ("线束测试" if zh else "Harness test", "32,000 points"),
+            ("温度循环" if zh else "Temperature cycle", "-70°C ~ +200°C"),
+        ],
+        "nav_label": "能力索引" if zh else "Capability index",
+        "quality_kicker": "TEST & QUALITY",
+        "quality_title": "测试不是最后一步，\n而是制造路径的一部分" if zh else "Test is part of the build path,\nnot a final afterthought",
+        "quality_body": "根据产品和客户要求配置 AOI、X-Ray、ICT、FCT、固件烧录、耐压、老化与环境测试，并将质量节点嵌入生产过程。" if zh else "AOI, X-Ray, ICT, FCT, firmware programming, hi-pot, burn-in and environmental tests are configured around product and customer requirements.",
+        "quality_items": ["AOI / AAOI", "BGA X-Ray", "Agilent 3070 ICT", "Functional Test", "Firmware Programming", "Burn-in / Hi-Pot"],
+        "more_kicker": "ADDITIONAL PROCESSES",
+        "more_title": "按项目配置的补充工艺" if zh else "Additional processes configured by program",
+        "more_items": [
+            ("热压焊" if zh else "Hot-bar soldering", "FPC to rigid board"),
+            ("自动敷形涂覆" if zh else "Automated conformal coating", "Controlled protection"),
+            ("激光标识" if zh else "Laser marking", "Durable traceability"),
+            ("老化与温循" if zh else "Burn-in & temperature cycle", "Up to +150°C / -70°C to +200°C"),
+        ],
+        "cta": "把图纸、BOM 和测试要求发给我们，先确认工艺匹配。" if zh else "Send the drawings, BOM and test requirements for an initial process-fit review.",
+        "cta_button": "开始项目沟通" if zh else "Start a project discussion",
+    }
+    hero_title = page["title"].replace("\n", "<br> ")
+    quality_title = page["quality_title"].replace("\n", "<br> ")
+    facts = "".join(f'<div class="inner-stat"><strong>{value}</strong><span>{label}</span></div>' for label, value in page["facts"])
+    index_links = "".join(f'<a href="#process-{i + 1}"><span>0{i + 1}</span>{item["name"]}</a>' for i, item in enumerate(m["items"]))
+    quality_items = "".join(f'<li>{item}</li>' for item in page["quality_items"])
+    more_items = "".join(f'<article><span class="mono">0{i + 1}</span><h3>{title}</h3><p>{desc}</p></article>' for i, (title, desc) in enumerate(page["more_items"]))
     body = f"""
-<div class="container">
-  <header class="page-hero">
-    <span class="mono">{m["kicker"]}</span>
-    <h1>{m["h1"]}</h1>
-    <p class="lead">{m["lead"]}</p>
-  </header>
-</div>
-<section class="media-band">
-  <div class="media"><img src="../assets/tht-line.jpg" alt="Assembly process" /></div>
-  <div class="copy">
-    <span class="mono">PROCESS PATH</span>
-    <h3>{path_title}</h3>
-    <p>{path_body}</p>
-  </div>
-</section>
-<div class="container process-stack">
-  {''.join(blocks)}
-  <section class="content-block">
-    <span class="mono">{m["note_title"]}</span>
-    <h3>{m["note_title"]}</h3>
-    <p>{m["note_body"]}</p>
+<main id="main-content" class="inner-main">
+  <section class="inner-hero manufacturing-hero">
+    <div class="container inner-hero-grid">
+      <div class="inner-hero-copy">
+        <span class="eyebrow mono">{page["eyebrow"]}</span>
+        <h1>{hero_title}</h1>
+        <p>{page["lead"]}</p>
+        <div class="home-actions">
+          <a class="button button-primary" href="{t["paths"]["contact"]}">{page["primary"]}<span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="#process-1">{page["secondary"]}</a>
+        </div>
+      </div>
+      <div class="inner-hero-photo"><img src="../assets/tht-line.jpg" alt="Assembly process" fetchpriority="high" decoding="async" /><span class="photo-label mono">SMT · THT · HARNESS · BOX-BUILD</span></div>
+    </div>
   </section>
-</div>
+
+  <section class="inner-proof"><div class="container inner-stats">{facts}</div></section>
+
+  <nav class="capability-index container" aria-label="{page["nav_label"]}"><span class="mono">{page["nav_label"]}</span><div>{index_links}</div></nav>
+
+  <div class="container manufacturing-modules">{''.join(blocks)}</div>
+
+  <section class="manufacturing-quality">
+    <div class="container manufacturing-quality-grid">
+      <div class="manufacturing-quality-copy"><span class="eyebrow mono">{page["quality_kicker"]}</span><h2>{quality_title}</h2><p>{page["quality_body"]}</p><ul>{quality_items}</ul></div>
+      <div class="manufacturing-quality-photo"><img src="../assets/testing.png" alt="Testing equipment" loading="lazy" decoding="async" /></div>
+    </div>
+  </section>
+
+  <section class="inner-section additional-processes"><div class="container"><div class="inner-section-head"><span class="eyebrow mono">{page["more_kicker"]}</span><h2>{page["more_title"]}</h2></div><div class="additional-grid">{more_items}</div></div></section>
+
+  <section class="inner-final-cta"><div class="container inner-final-cta-grid"><h2>{page["cta"]}</h2><a class="button button-light" href="{t["paths"]["contact"]}">{page["cta_button"]}<span aria-hidden="true">→</span></a></div></section>
+</main>
 """
-    return shell(t, m["title"], "manufacturing", body)
+    description = "利华电子提供 SMT、插件组装、定制线束、机电装配以及 ICT/FCT 测试服务。" if zh else "Lihua provides SMT, THT assembly, custom harness, box-build and ICT/FCT testing services."
+    return shell(t, m["title"], "manufacturing", body, description, "inner-page manufacturing-page")
 
 
 def page_about(t):
     a = t["about"]
-    blocks = []
-    for b in a["blocks"]:
-        blocks.append(
-            f"""
-<section class="content-block">
-  <span class="mono">{b["tag"]}</span>
-  <h3>{b["title"]}</h3>
-  <p>{b["body"]}</p>
-</section>"""
-        )
-    facts = []
-    for label, value in a["facts"]:
-        facts.append(
-            f'<div class="row"><span class="mono">{label}</span><strong>{value}</strong></div>'
-        )
+    zh = t["dir"] == "zh"
+    facts = "".join(f'<div class="inner-stat"><strong>{value}</strong><span>{label}</span></div>' for label, value in a["facts"])
+    offers = "".join(
+        f'<article class="about-value"><span class="mono">0{i + 1}</span><h3>{title}</h3><p>{desc}</p></article>'
+        for i, (title, desc) in enumerate(t["home"]["offers"])
+    )
+    page = {
+        "eyebrow": "TAISHAN CITY LIHUA ELECTRIC FACTORY LTD.",
+        "title": "三十余年，专注把复杂电子产品稳定制造出来" if zh else "More than three decades focused on dependable electronics manufacturing",
+        "lead": "利华成立于 1993 年，提供供应链协同、工程支持、完整生产配套与测试服务，长期服务于高可靠和复杂装配项目。" if zh else "Founded in 1993, Lihua combines supply-chain coordination, engineering support, complete manufacturing processes and test for high-reliability, complex assemblies.",
+        "story_kicker": "OUR FOUNDATION",
+        "story_title": "从台山出发，做长期制造伙伴" if zh else "Built in Taishan for long-term manufacturing partnerships",
+        "story_body": "30+ 年的 EMS 经验让团队更关注可制造性、过程一致性与持续交付，而不是一次性的产品展示。厂区与工程团队围绕客户项目长期协作。" if zh else "Over 30 years of EMS experience has shaped a focus on manufacturability, process consistency and sustained delivery rather than one-off builds.",
+        "campus_kicker": "CAMPUS & PEOPLE",
+        "campus_title": "真实厂区，真实生产现场" if zh else "A real campus and an experienced production team",
+        "campus_body": "厂区占地 50 亩，并预留 30 亩扩展用地；生产车间约 7,000 平方米。精益方法用于适合的产品与工序，以提升效率和质量一致性。" if zh else "The 50-mu campus includes 30 mu of reserved expansion land and about 7,000 square meters of manufacturing space. Lean methods are applied where they improve efficiency and consistency.",
+        "quality_kicker": "QUALITY SYSTEM",
+        "quality_title": "用体系、标准和现场执行建立信任" if zh else "Trust built through systems, standards and floor execution",
+        "quality_body": "质量体系与工艺标准覆盖板卡、线束与整机装配，并按项目要求配置检验、测试和追溯。" if zh else "Quality systems and workmanship standards cover board, harness and box-build programs with inspection, test and traceability configured by project.",
+        "values_kicker": "HOW WE WORK",
+        "values_title": "合作原则" if zh else "Working principles",
+        "cta": "需要进一步了解厂区、审核资料或安排项目沟通？" if zh else "Need a deeper capability review, audit information or project discussion?",
+        "cta_button": "联系利华" if zh else "Contact Lihua",
+    }
+    title = page["title"].replace("\n", "<br> ")
     body = f"""
-<div class="container">
-  <header class="page-hero">
-    <span class="mono">{a["kicker"]}</span>
-    <h1>{a["h1"]}</h1>
-    <p class="lead">{a["lead"]}</p>
-  </header>
-</div>
-<section class="media-band">
-  <div class="media"><img src="../assets/lean.jpg" alt="Lean manufacturing" /></div>
-  <div class="copy">
-    <span class="mono">QUALITY</span>
-    <h3>{'质量体系' if t["dir"]=='zh' else 'Quality system'}</h3>
-    <ul class="proof-list">
-      <li>ISO 9001 / ISO 14000 / IATF 16949</li>
-      <li>IPC-A-610 Class 2 &amp; 3 · J-STD-001 · WHMA-A-620</li>
-      <li>IPC member</li>
-    </ul>
-  </div>
-</section>
-<div class="container">
-  <div class="two-col">
-    <div>
-{''.join(blocks[:2])}
-    </div>
-    <div>
-{''.join(blocks[2:])}
-      <section class="content-block" style="border-bottom:none;padding-top:8px">
-        <span class="mono">{a["facts_title"]}</span>
-        <h3>{a["facts_title"]}</h3>
-        <div class="fact-list">{''.join(facts)}</div>
-      </section>
-    </div>
-  </div>
-</div>
+<main id="main-content" class="inner-main">
+  <section class="inner-hero about-hero"><div class="container inner-hero-grid"><div class="inner-hero-copy"><span class="eyebrow mono">{page["eyebrow"]}</span><h1>{title}</h1><p>{page["lead"]}</p></div><div class="inner-hero-photo"><img src="../assets/plant.jpg" alt="Lihua campus" fetchpriority="high" decoding="async" /><span class="photo-label mono">FOUNDED 1993 · TAISHAN</span></div></div></section>
+
+  <section class="inner-proof"><div class="container inner-stats">{facts}</div></section>
+
+  <section class="inner-section about-story"><div class="container about-story-grid"><div><span class="eyebrow mono">{page["story_kicker"]}</span><h2>{page["story_title"]}</h2></div><div><p>{page["story_body"]}</p><p>{a["blocks"][1]["body"]}</p></div></div></section>
+
+  <section class="about-campus"><div class="about-campus-gallery"><img src="../assets/lean.jpg" alt="Lihua production floor" loading="lazy" decoding="async" /><img src="../assets/assembly.jpg" alt="Lihua assembly line" loading="lazy" decoding="async" /></div><div class="about-campus-copy"><span class="eyebrow mono">{page["campus_kicker"]}</span><h2>{page["campus_title"]}</h2><p>{page["campus_body"]}</p></div></section>
+
+  <section class="about-quality"><div class="container about-quality-grid"><div><span class="eyebrow mono">{page["quality_kicker"]}</span><h2>{page["quality_title"]}</h2><p>{page["quality_body"]}</p></div><ul><li>ISO 9001</li><li>IATF 16949</li><li>ISO 14000</li><li>IPC-A-610 Class 2 &amp; 3</li><li>IPC J-STD-001</li><li>IPC/WHMA-A-620</li></ul></div></section>
+
+  <section class="inner-section about-values"><div class="container"><div class="inner-section-head"><span class="eyebrow mono">{page["values_kicker"]}</span><h2>{page["values_title"]}</h2></div><div class="about-values-grid">{offers}</div></div></section>
+
+  <section class="inner-final-cta"><div class="container inner-final-cta-grid"><h2>{page["cta"]}</h2><a class="button button-light" href="{t["paths"]["contact"]}">{page["cta_button"]}<span aria-hidden="true">→</span></a></div></section>
+</main>
 """
-    return shell(t, a["title"], "about", body)
+    description = "了解利华电子自 1993 年以来的 EMS 经验、台山厂区、质量体系与合作原则。" if zh else "Learn about Lihua's EMS experience since 1993, Taishan campus, quality systems and working principles."
+    return shell(t, a["title"], "about", body, description, "inner-page about-page")
 
 
 def page_contact(t):
     c = t["contact"]
+    zh = t["dir"] == "zh"
     people = []
     for p in c["people"]:
         phone = next((x[3:].strip() for x in p["lines"] if x.startswith("T: ")), "")
@@ -773,44 +889,45 @@ def page_contact(t):
         if email:
             body_html.append(f'<a href="mailto:{email}">{email}</a>')
         people.append(
-            f"""
-<div class="contact-card">
-  <div>
-    <span class="mono label">{p["role"]}</span>
-    <h3>{p["name"]}</h3>
-    <p class="role">{p["title"]}</p>
-    <p class="body">{"<br>".join(body_html)}</p>
-  </div>
-</div>"""
+            f'<article class="contact-person"><span class="eyebrow mono">{p["role"]}</span><h2>{p["name"]}</h2><p class="contact-role">{p["title"]}</p><div class="contact-person-links">{"".join(f"<span>{line}</span>" for line in body_html)}</div></article>'
         )
     website = c.get("note_body", "www.ts-lihua.com").replace("https://", "")
+    page = {
+        "eyebrow": "START A CONVERSATION",
+        "title": "让我们先确认项目是否匹配" if zh else "Let's start by confirming the project fit",
+        "lead": "无论是新项目评估、样品、工艺问题还是供应商审核，都可以直接联系工厂团队。" if zh else "For new program review, samples, process questions or supplier audits, contact the plant team directly.",
+        "primary": "发送项目邮件" if zh else "Send a project email",
+        "secondary": "拨打工厂电话" if zh else "Call the factory",
+        "people_kicker": "DIRECT CONTACTS",
+        "people_title": "直接联系项目负责人" if zh else "Contact the project team directly",
+        "brief_kicker": "PROJECT BRIEF",
+        "brief_title": "邮件中建议包含这些资料" if zh else "What to include in the first email",
+        "brief_items": [
+            "产品类型与应用场景" if zh else "Product type and application",
+            "BOM、Gerber、图纸或线束资料" if zh else "BOM, Gerber, drawings or harness data",
+            "预计批量与交付节奏" if zh else "Expected volume and delivery cadence",
+            "测试、认证与追溯要求" if zh else "Test, certification and traceability requirements",
+            "样品或 NPI 时间计划" if zh else "Sample or NPI timeline",
+        ],
+        "location_kicker": "LOCATION",
+        "location_title": "中国 · 广东 · 台山" if zh else "Taishan · Guangdong · China",
+        "location_body": "台山市利华电子厂有限公司，生产车间约 7,000 平方米。" if zh else "Taishan City Lihua Electric Factory Ltd., with about 7,000 square meters of manufacturing space.",
+    }
+    title = page["title"].replace("\n", "<br> ")
+    brief_items = "".join(f'<li><span class="mono">0{i + 1}</span>{item}</li>' for i, item in enumerate(page["brief_items"]))
     body = f"""
-<div class="container">
-  <header class="page-hero">
-    <span class="mono">{c["kicker"]}</span>
-    <h1>{c["h1"]}</h1>
-    <p class="lead">{c["lead"]}</p>
-  </header>
-  <div class="contact-grid">
-{''.join(people)}
-    <div class="contact-card">
-      <div>
-        <span class="mono label">{'位置' if t["dir"]=='zh' else 'LOCATION'}</span>
-        <h3>{c["addr_title"]}</h3>
-        <p class="meta">{c["addr_body"]}</p>
-      </div>
-    </div>
-    <div class="contact-card">
-      <div>
-        <span class="mono label">{'官网' if t["dir"]=='zh' else 'WEBSITE'}</span>
-        <h3><a href="https://{website}">{c["note_title"]}</a></h3>
-        <p class="meta">{'官方网站' if t["dir"]=='zh' else 'Official website'}</p>
-      </div>
-    </div>
-  </div>
-</div>
+<main id="main-content" class="inner-main">
+  <section class="contact-hero"><div class="container contact-hero-grid"><div><span class="eyebrow mono">{page["eyebrow"]}</span><h1>{title}</h1><p>{page["lead"]}</p><div class="home-actions"><a class="button button-primary" href="mailto:raylee@ts-lihua.com">{page["primary"]}<span aria-hidden="true">→</span></a><a class="button button-secondary" href="tel:+867505625181">{page["secondary"]}</a></div></div><div class="contact-hero-mark"><strong>LIHUA</strong><span>EMS · EST. 1993</span></div></div></section>
+
+  <section class="inner-section contact-people-section"><div class="container"><div class="inner-section-head"><span class="eyebrow mono">{page["people_kicker"]}</span><h2>{page["people_title"]}</h2></div><div class="contact-people-grid">{''.join(people)}</div></div></section>
+
+  <section class="contact-brief"><div class="container contact-brief-grid"><div><span class="eyebrow mono">{page["brief_kicker"]}</span><h2>{page["brief_title"]}</h2></div><ol>{brief_items}</ol></div></section>
+
+  <section class="contact-location"><div class="contact-location-photo"><img src="../assets/plant.jpg" alt="Lihua campus" loading="lazy" decoding="async" /></div><div class="contact-location-copy"><span class="eyebrow mono">{page["location_kicker"]}</span><h2>{page["location_title"]}</h2><p>{page["location_body"]}</p><div class="contact-location-links"><a href="https://{website}">{website}<span aria-hidden="true">↗</span></a><a href="mailto:raylee@ts-lihua.com">raylee@ts-lihua.com<span aria-hidden="true">→</span></a></div></div></section>
+</main>
 """
-    return shell(t, c["title"], "contact", body)
+    description = "联系利华电子工厂团队，沟通 PCBA、线束、机电装配、样品及供应商审核需求。" if zh else "Contact Lihua's plant team about PCBA, harness, box-build, samples and supplier audit requirements."
+    return shell(t, c["title"], "contact", body, description, "inner-page contact-page")
 
 
 def main():
