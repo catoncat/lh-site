@@ -47,7 +47,7 @@ I18N = {
             "title": "利华电子 | PCBA、线束与机电装配制造服务",
             "description": "台山市利华电子厂有限公司提供 PCBA、插件组装、定制线束、机电装配与测试服务，拥有 30+ 年电子制造服务经验。",
             "hero_kicker": "ELECTRONICS MANUFACTURING SERVICES · SINCE 1993",
-            "hero_title": "复杂电子产品的\n一站式制造伙伴",
+            "hero_title": "高质量电子产品的\n一站式制造伙伴",
             "hero_lead": "从 PCBA、插件组装、定制线束到整机装配与测试，利华为工业、交通、航空与检测设备客户提供稳定、灵活、可追溯的电子制造服务。",
             "hero_primary": "提交项目需求",
             "hero_secondary": "查看制造能力",
@@ -109,6 +109,15 @@ I18N = {
                     "metric": "ICT · FCT · Burn-in · Hi-Pot",
                     "image": "box-build.png",
                 },
+            ],
+            "mes_kicker": "DIGITAL PROCESS CONTROL",
+            "mes_title": "MES 连接每一道工序，\n让质量过程可追溯",
+            "mes_body": "利华通过 MES 将生产任务、物料批次、工序执行、检验测试与异常处置串联起来，让质量要求落实到制造过程并形成可查询的生产履历。",
+            "mes_items": [
+                ("01", "工单与物料", "关联生产任务、BOM 与物料批次。"),
+                ("02", "工序执行", "记录关键工序的人员、设备与时间。"),
+                ("03", "检验与测试", "汇集制程检验、测试结果与不良信息。"),
+                ("04", "追溯与闭环", "建立生产履历并记录异常处置与改进。"),
             ],
             "quality_kicker": "QUALITY BUILT INTO THE PROCESS",
             "quality_title": "不是交付前检查，\n而是全过程质量控制",
@@ -307,7 +316,7 @@ I18N = {
             "title": "LIHUA ELECTRONICS | PCBA, Cable Harness & Box-Build EMS",
             "description": "Taishan City Lihua Electric Factory provides PCBA, THT assembly, custom cable harness, box-build and testing backed by 30+ years of EMS experience.",
             "hero_kicker": "ELECTRONICS MANUFACTURING SERVICES · SINCE 1993",
-            "hero_title": "One manufacturing partner\nfor complex electronics",
+            "hero_title": "One manufacturing partner\nfor high-quality electronics",
             "hero_lead": "From PCBA and THT assembly to custom cable harnesses, box-build and test, Lihua delivers flexible, traceable electronics manufacturing for demanding industrial products.",
             "hero_primary": "Start a project",
             "hero_secondary": "Explore capabilities",
@@ -369,6 +378,15 @@ I18N = {
                     "metric": "ICT · FCT · Burn-in · Hi-Pot",
                     "image": "box-build.png",
                 },
+            ],
+            "mes_kicker": "DIGITAL PROCESS CONTROL",
+            "mes_title": "MES connects each production step\nfor traceable quality",
+            "mes_body": "Lihua uses MES to connect production tasks, material lots, process execution, inspection, test and exception handling—turning quality requirements into a queryable manufacturing record.",
+            "mes_items": [
+                ("01", "Work Orders & Materials", "Link production tasks, BOM data and material lots."),
+                ("02", "Process Execution", "Record people, equipment and time at key operations."),
+                ("03", "Inspection & Test", "Collect in-process checks, test results and defects."),
+                ("04", "Traceability & Closure", "Build production history and retain corrective-action records."),
             ],
             "quality_kicker": "QUALITY BUILT INTO THE PROCESS",
             "quality_title": "Quality is controlled throughout,\nnot inspected in at the end",
@@ -613,6 +631,7 @@ def shell(t, title: str, active: str, body: str, description=None, body_class: s
 def page_home(t):
     h = t["home"]
     hero_title = h["hero_title"].replace("\n", "<br> ")
+    mes_title = h["mes_title"].replace("\n", "<br> ")
     quality_title = h["quality_title"].replace("\n", "<br> ")
     stats = [
         f'<div class="home-stat"><strong>{value}</strong><span>{label}</span></div>'
@@ -632,6 +651,12 @@ def page_home(t):
             '</div></article>'
         )
     quality_items = [f'<li>{item}</li>' for item in h["quality_items"]]
+    mes_items = [
+        '<li class="mes-flow-item">'
+        f'<span class="mes-flow-no mono">{no}</span><div><h3>{title}</h3><p>{desc}</p></div>'
+        '</li>'
+        for no, title, desc in h["mes_items"]
+    ]
     process_items = [
         '<li class="process-step">'
         f'<span class="process-no mono">{no}</span><div><h3>{title}</h3><p>{desc}</p></div>'
@@ -680,6 +705,18 @@ def page_home(t):
       </div>
       <div class="capability-grid">{''.join(capabilities)}</div>
       <a class="section-link" href="{t["paths"]["manufacturing"]}">{h["hero_secondary"]}<span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="home-mes">
+    <div class="container home-mes-grid">
+      <div class="home-mes-copy">
+        <span class="eyebrow mono">{h["mes_kicker"]}</span>
+        <h2>{mes_title}</h2>
+        <p>{h["mes_body"]}</p>
+        <span class="mes-system-label mono">MES · PROCESS · QUALITY · TRACEABILITY</span>
+      </div>
+      <ol class="mes-flow">{''.join(mes_items)}</ol>
     </div>
   </section>
 
@@ -771,6 +808,10 @@ def page_manufacturing(t):
         "quality_title": "测试不是最后一步，\n而是制造路径的一部分" if zh else "Test is part of the build path,\nnot a final afterthought",
         "quality_body": "根据产品和客户要求配置 AOI、X-Ray、ICT、FCT、固件烧录、耐压、老化与环境测试，并将质量节点嵌入生产过程。" if zh else "AOI, X-Ray, ICT, FCT, firmware programming, hi-pot, burn-in and environmental tests are configured around product and customer requirements.",
         "quality_items": ["AOI / AAOI", "BGA X-Ray", "Agilent 3070 ICT", "Functional Test", "Firmware Programming", "Burn-in / Hi-Pot"],
+        "mes_kicker": "MES PROCESS CONTROL",
+        "mes_title": "用生产数据连接过程与质量" if zh else "Production data connects process and quality",
+        "mes_body": "MES 将生产任务、关键工序记录、质量数据与批次追溯纳入同一生产履历，为过程控制、问题定位与持续改进提供依据。" if zh else "MES brings production tasks, key operation records, quality data and lot traceability into one manufacturing history for process control, issue analysis and continual improvement.",
+        "mes_items": ["生产任务", "工序记录", "质量数据", "批次追溯"] if zh else ["Production tasks", "Process records", "Quality data", "Lot traceability"],
         "more_kicker": "ADDITIONAL PROCESSES",
         "more_title": "按项目配置的补充工艺" if zh else "Additional processes configured by program",
         "more_items": [
@@ -787,6 +828,7 @@ def page_manufacturing(t):
     facts = "".join(f'<div class="inner-stat"><strong>{value}</strong><span>{label}</span></div>' for label, value in page["facts"])
     index_links = "".join(f'<a href="#process-{i + 1}"><span>0{i + 1}</span>{item["name"]}</a>' for i, item in enumerate(m["items"]))
     quality_items = "".join(f'<li>{item}</li>' for item in page["quality_items"])
+    mes_items = "".join(f'<li>{item}</li>' for item in page["mes_items"])
     more_items = "".join(f'<article><span class="mono">0{i + 1}</span><h3>{title}</h3><p>{desc}</p></article>' for i, (title, desc) in enumerate(page["more_items"]))
     body = f"""
 <main id="main-content" class="inner-main">
@@ -816,6 +858,10 @@ def page_manufacturing(t):
       <div class="manufacturing-quality-copy"><span class="eyebrow mono">{page["quality_kicker"]}</span><h2>{quality_title}</h2><p>{page["quality_body"]}</p><ul>{quality_items}</ul></div>
       <div class="manufacturing-quality-photo"><img src="../assets/testing.png" alt="Testing equipment" loading="lazy" decoding="async" /></div>
     </div>
+    <div class="container manufacturing-mes">
+      <div><span class="eyebrow mono">{page["mes_kicker"]}</span><h3>{page["mes_title"]}</h3><p>{page["mes_body"]}</p></div>
+      <ul>{mes_items}</ul>
+    </div>
   </section>
 
   <section class="inner-section additional-processes"><div class="container"><div class="inner-section-head"><span class="eyebrow mono">{page["more_kicker"]}</span><h2>{page["more_title"]}</h2></div><div class="additional-grid">{more_items}</div></div></section>
@@ -837,7 +883,7 @@ def page_about(t):
     )
     page = {
         "eyebrow": "TAISHAN CITY LIHUA ELECTRIC FACTORY LTD.",
-        "title": "三十余年，专注把复杂电子产品稳定制造出来" if zh else "More than three decades focused on dependable electronics manufacturing",
+        "title": "三十余年，专注把高质量电子产品稳定制造出来" if zh else "More than three decades focused on high-quality electronics manufacturing",
         "lead": "利华成立于 1993 年，提供供应链协同、工程支持、完整生产配套与测试服务，长期服务于高可靠和复杂装配项目。" if zh else "Founded in 1993, Lihua combines supply-chain coordination, engineering support, complete manufacturing processes and test for high-reliability, complex assemblies.",
         "story_kicker": "OUR FOUNDATION",
         "story_title": "从台山出发，做长期制造伙伴" if zh else "Built in Taishan for long-term manufacturing partnerships",

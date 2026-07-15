@@ -1327,6 +1327,8 @@ img {
   font-weight: 900;
 }
 
+:lang(zh) .home-hero-copy h1 { font-size: clamp(52px, 5.6vw, 76px); }
+
 .home-hero-lead {
   max-width: 640px;
   font-size: clamp(18px, 1.6vw, 22px);
@@ -1455,6 +1457,7 @@ img {
 
 .home-section-head.compact { grid-template-columns: minmax(0, 900px); }
 .home-section-head h2,
+.home-mes-copy h2,
 .home-quality-copy h2,
 .home-factory-copy h2,
 .home-final-cta h2 {
@@ -1512,6 +1515,30 @@ img {
   border-bottom: 1px solid currentColor;
   padding-bottom: 4px;
 }
+
+.home-mes {
+  padding: clamp(82px, 9vw, 132px) 0;
+  background: var(--home-mist);
+  border-top: 1px solid #cbd1cc;
+}
+
+.home-mes-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(52px, 8vw, 120px);
+  align-items: start;
+}
+
+.home-mes-copy { position: sticky; top: 100px; }
+.home-mes-copy h2 { margin-top: 13px; }
+.home-mes-copy > p { margin-top: 24px; max-width: 590px; color: #46524b; font-size: 18px; line-height: 1.75; }
+.mes-system-label { display: inline-flex; margin-top: 34px; padding: 10px 13px; color: var(--home-green); border: 1px solid rgba(23,97,63,0.36); }
+
+.mes-flow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #bfc7c0; border-left: 1px solid #bfc7c0; }
+.mes-flow-item { min-height: 250px; padding: 26px; list-style: none; border-right: 1px solid #bfc7c0; border-bottom: 1px solid #bfc7c0; display: flex; flex-direction: column; justify-content: space-between; gap: 34px; background: rgba(255,255,255,0.48); }
+.mes-flow-no { color: var(--home-green); font-weight: 800; }
+.mes-flow-item h3 { font-size: clamp(20px, 2vw, 27px); line-height: 1.2; }
+.mes-flow-item p { margin-top: 12px; color: #56615a; font-size: 15px; line-height: 1.65; }
 
 .home-quality { padding: clamp(82px, 9vw, 132px) 0; background: var(--home-green-deep); color: #fff; }
 .home-quality-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 0.9fr); gap: clamp(50px, 7vw, 100px); align-items: center; }
@@ -1573,11 +1600,13 @@ img {
   .home-page .site-nav .nav-status { font-size: 9px; }
   .home-hero { padding-top: 48px; }
   .home-hero-grid,
+  .home-mes-grid,
   .home-quality-grid,
   .home-factory,
   .home-final-cta-inner,
   .home-section-head { grid-template-columns: 1fr; }
   .home-hero-copy h1 { font-size: clamp(43px, 11vw, 66px); }
+  :lang(zh) .home-hero-copy h1 { font-size: clamp(42px, 10vw, 60px); }
   .home-hero-visual { min-height: 430px; box-shadow: 12px 12px 0 rgba(23, 97, 63, 0.12); }
   .home-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .home-stat:nth-child(2) { border-right: 1px solid rgba(17, 23, 19, 0.18); }
@@ -1585,6 +1614,7 @@ img {
   .capability-grid { grid-template-columns: 1fr; }
   .capability-card { grid-template-columns: minmax(150px, 0.8fr) minmax(0, 1.2fr); min-height: 270px; }
   .capability-photo { min-height: 0; }
+  .home-mes-copy { position: static; }
   .home-quality-photo { min-height: 390px; }
   .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .process-step:nth-child(2) { border-right: 1px solid #cbd1cc; }
@@ -1602,6 +1632,7 @@ img {
   .home-page .site-nav .nav-links a { font-size: 12px; }
   .home-hero { padding-top: 38px; padding-bottom: 42px; }
   .home-hero-copy h1 { margin-top: 16px; font-size: clamp(40px, 11.4vw, 54px); letter-spacing: -0.045em; }
+  :lang(zh) .home-hero-copy h1 { font-size: clamp(39px, 10.8vw, 48px); }
   .home-hero-lead { font-size: 17px; line-height: 1.65; }
   .home-actions { display: grid; grid-template-columns: 1fr; }
   .button { width: 100%; justify-content: space-between; }
@@ -1613,14 +1644,18 @@ img {
   .home-section { padding: 72px 0; }
   .home-section-head { gap: 20px; margin-bottom: 30px; }
   .home-section-head h2,
+  .home-mes-copy h2,
   .home-quality-copy h2,
   .home-factory-copy h2,
   .home-final-cta h2 { font-size: 36px; }
   .home-section-head > p,
+  .home-mes-copy > p,
   .home-quality-copy > p { font-size: 16px; }
   .capability-card { grid-template-columns: 1fr; }
   .capability-photo { min-height: 210px; }
   .capability-copy { padding: 22px; }
+  .mes-flow { grid-template-columns: 1fr; }
+  .mes-flow-item { min-height: 190px; }
   .quality-list { grid-template-columns: 1fr; }
   .quality-list li:nth-child(odd) { border-right: none; }
   .quality-list li:nth-child(even) { padding-left: 0; }
@@ -1767,6 +1802,12 @@ img {
 .manufacturing-quality-copy li { list-style: none; padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,0.22); font-size: 14px; }
 .manufacturing-quality-photo { min-height: 480px; position: relative; background: #fff; }
 .manufacturing-quality-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 30px; }
+.manufacturing-mes { margin-top: clamp(54px, 7vw, 96px); padding-top: clamp(40px, 5vw, 64px); border-top: 1px solid rgba(255,255,255,0.24); display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr); gap: clamp(40px, 7vw, 100px); align-items: end; }
+.manufacturing-mes h3 { margin-top: 14px; max-width: 760px; font-size: clamp(31px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.04em; }
+.manufacturing-mes p { margin-top: 20px; max-width: 760px; color: rgba(255,255,255,0.75); font-size: 16px; line-height: 1.72; }
+.manufacturing-mes ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,0.22); }
+.manufacturing-mes li { list-style: none; padding: 17px 10px 17px 0; border-bottom: 1px solid rgba(255,255,255,0.22); font-size: 14px; }
+.manufacturing-mes li::before { content: "↳"; margin-right: 9px; color: #9cd0ad; }
 
 .additional-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #cbd1cc; border-bottom: 1px solid #cbd1cc; }
 .additional-grid article { min-height: 230px; padding: 25px; border-right: 1px solid #cbd1cc; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; }
@@ -1849,6 +1890,7 @@ img {
 @media (max-width: 960px) {
   .inner-hero-grid,
   .manufacturing-quality-grid,
+  .manufacturing-mes,
   .about-story-grid,
   .about-quality-grid,
   .contact-hero-grid,
@@ -1904,6 +1946,8 @@ img {
   .manufacturing-quality-copy h2 { font-size: 36px; }
   .manufacturing-quality-copy ul { grid-template-columns: 1fr; }
   .manufacturing-quality-photo { min-height: 300px; }
+  .manufacturing-mes h3 { font-size: 33px; }
+  .manufacturing-mes ul { grid-template-columns: 1fr; }
   .additional-grid,
   .about-values-grid,
   .contact-people-grid { grid-template-columns: 1fr; }
