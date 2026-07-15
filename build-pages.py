@@ -718,7 +718,10 @@ def page_home(t):
         <p>{h["mes_body"]}</p>
         <span class="mes-system-label mono">{h["mes_label"]}</span>
       </div>
-      <ol class="mes-flow">{''.join(mes_items)}</ol>
+      <div class="home-mes-operations">
+        <p class="mes-system-rail mono"><span>ERP</span><i aria-hidden="true">→</i><span>MES</span><i aria-hidden="true">→</i><span>TPM</span></p>
+        <ol class="mes-flow">{''.join(mes_items)}</ol>
+      </div>
     </div>
   </section>
 
@@ -862,7 +865,7 @@ def page_manufacturing(t):
         for no, system, role, desc in page["digital_systems"]
     )
     digital_capabilities = "".join(
-        f'<article class="digital-capability"><span class="mono">0{i + 1}</span><h3>{title}</h3><p>{desc}</p></article>'
+        f'<li class="digital-capability"><span class="mono">0{i + 1}</span><div><h3>{title}</h3><p>{desc}</p></div></li>'
         for i, (title, desc) in enumerate(page["digital_capabilities"])
     )
     digital_outcomes = "".join(
@@ -899,16 +902,14 @@ def page_manufacturing(t):
       <p>{page["digital_body"]}</p>
     </div>
     <ol class="container digital-system-flow">{digital_systems}</ol>
-    <div class="container digital-detail-grid">
-      <div>
-        <div class="digital-detail-head"><span class="eyebrow mono">{page["digital_cap_kicker"]}</span><h2>{page["digital_cap_title"]}</h2></div>
-        <div class="digital-capabilities">{digital_capabilities}</div>
-      </div>
-      <aside class="digital-outcomes" aria-label="{page["digital_outcome_kicker"]}">
+    <p class="container digital-note mono">{page["digital_note"]}</p>
+    <div class="container digital-detail">
+      <div class="digital-detail-head"><span class="eyebrow mono">{page["digital_cap_kicker"]}</span><h2>{page["digital_cap_title"]}</h2></div>
+      <ol class="digital-capabilities">{digital_capabilities}</ol>
+      <div class="digital-outcome-strip" aria-label="{page["digital_outcome_kicker"]}">
         <span class="eyebrow mono">{page["digital_outcome_kicker"]}</span>
         {digital_outcomes}
-        <p class="digital-note mono">{page["digital_note"]}</p>
-      </aside>
+      </div>
     </div>
   </section>
 
